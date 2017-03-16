@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
-<meta charset="utf-8">
-<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+<head>
+    <!--引入bootstrap-->
+    <link rel="stylesheet" href="thirdPart/bootstrap/bootstrap.min.css">
+</head>
 <body>
 
 <div ng-app="myApp" ng-controller="myCtrl">
 
-    名: <input type="text" ng-model="firstName"><br>
-    姓: <input type="text" ng-model="lastName"><br>
+    名: <input type="text" class="form-control" ng-model="firstName"><br>
+    姓: <input type="text" class="form-control" ng-model="lastName"><br>
     <br>
     姓名: {{firstName + " " + lastName}}
 
 </div>
-
+<!--引入 angularJs-->
+<script src="thirdPart/angular/angular.min.js"></script>
 <script src="app.js"></script>
 
 </body>
